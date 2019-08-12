@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'react-bootstrap';
 
 class App extends Component {
   constructor() {
@@ -10,6 +11,7 @@ class App extends Component {
     return (
       <div>
         <h2>Gift Giver</h2>
+        <Button className='btn-add'>Add Gift</Button>
       </div>
     );
   }
