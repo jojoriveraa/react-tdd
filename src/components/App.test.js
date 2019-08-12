@@ -8,4 +8,8 @@ describe('The gift-giver app', () => {
   it('renders correctly', () => {
     expect(app).toMatchSnapshot();
   });
+
+  it('intianizes with an empty list of gitfs', () =>{
+    expect(app.state().gifts).toEqual([])
+  })
 });
