@@ -1,11 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
-import { italic } from 'ansi-colors';
+import App from './App'
 
 const app = shallow(<App />);
 
-describe('the app', () => {
+describe('The gift-giver app', () => {
   it('renders correctly', () => {
     expect(app).toMatchSnapshot();
   });
