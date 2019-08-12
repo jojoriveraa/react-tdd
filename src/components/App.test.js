@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';
 
-describe('The gift-giver', () => {
+describe('App [gift-giver]', () => {
   const app = shallow(<App />);
 
   it('renders correctly', () => {
