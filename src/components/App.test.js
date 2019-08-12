@@ -4,7 +4,7 @@ import App from './App';
 
 const app = shallow(<App />);
 
-describe('the app', () => {
+describe('The gift-giver app', () => {
   it('renders correctly', () => {
     expect(app).toMatchSnapshot();
   });
