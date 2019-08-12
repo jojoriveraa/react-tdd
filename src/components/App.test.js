@@ -13,8 +13,15 @@ describe('The gift-giver app', () => {
     expect(app.state().gifts).toEqual([]);
   });
 
-  it('add gift to `state` when clicking the `add gift` button', () => {
-    app.find('.btn-add').simulate('click');
-    expect(app.state().gifts).toEqual([{ id: 1 }]);
+  describe('when `add gift` is clicked', () => {
+    it('should add a gift to `state`', () => {
+      app.find('.btn-add').simulate('click');
+      expect(app.state().gifts).toEqual([{ id: 1 }]);
+    });
+
+    it('should add a new gift to the rendered list', () => {
+      app.find('.btn-add').simulate('click');
+      expect(app.find('.gift-list').children().length).toEqual(1)
+    });
   });
 });
