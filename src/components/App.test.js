@@ -14,14 +14,16 @@ describe('The gift-giver', () => {
   });
 
   describe('when `add gift` is clicked', () => {
-    it('should add a gift to `state`', () => {
+    beforeEach(() => {
       app.find('.btn-add').simulate('click');
+    });
+
+    it('should add a gift to `state`', () => {
       expect(app.state().gifts).toEqual([{ id: 1 }]);
     });
 
     it('should add a new gift to the rendered list', () => {
-      app.find('.btn-add').simulate('click');
-      expect(app.find('.gift-list').children().length).toEqual(1)
+      expect(app.find('.gift-list').children().length).toEqual(1);
     });
   });
 });
