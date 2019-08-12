@@ -21,7 +21,7 @@ describe('The gift-giver', () => {
 
     it('should add a new gift to the rendered list', () => {
       app.find('.btn-add').simulate('click');
-      expect(app.find('.gift-list').children().length).toEqual(1)
+      expect(app.find('.gift-list').children().length).toEqual(1);
     });
   });
 });
