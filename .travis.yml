@@ -5,4 +5,4 @@ cache:
   directories:
     - node_modules
 script:
-  - yarn test -u --all --coverage --ci --reporters=default --reporters=jest-junit
+  - yarn test -u --all --coverage --ci
