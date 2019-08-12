@@ -20,14 +20,16 @@ class App extends Component {
     // push a new item with the new id
     gifts.push({ id: maxId + 1 });
     // replace state gifts with the local copy
-    this.state = { gifts };
+    this.setState({ gifts });
   };
 
   render() {
     return (
       <div>
         <h2>Gift Giver</h2>
-        <Button className="btn-add" onClick={this.addGift}>Add Gift</Button>
+        <Button className="btn-add" onClick={this.addGift}>
+          Add Gift
+        </Button>
       </div>
     );
   }
