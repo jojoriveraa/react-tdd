@@ -10,6 +10,6 @@ describe('The gift-giver app', () => {
   });
 
   it('intianizes with an empty list of gitfs', () =>{
-    expect(app.state().gifts).equals([])
+    expect(app.state().gifts).toEqual([])
   })
 });
