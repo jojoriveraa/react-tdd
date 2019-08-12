@@ -2,6 +2,7 @@
   "name": "gift-giver",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jojoriveraa.github.io/giftgiver/",
   "dependencies": {
     "enzyme-adapter-react-16": "^1.14.0",
     "react": "^16.9.0",
