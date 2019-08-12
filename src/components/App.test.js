@@ -4,17 +4,19 @@ import App from './App';
 
 const app = shallow(<App />);
 
-describe('The gift-giver app', () => {
+describe('The gift-giver', () => {
   it('renders correctly', () => {
     expect(app).toMatchSnapshot();
   });
 
-  it('intianizes with an empty list of gitfs', () => {
+  it('initializes with an empty list of gitfs', () => {
     expect(app.state().gifts).toEqual([]);
   });
 
-  it('add gift to `state` when clicking the `add gift` button', () => {
-    app.find('.btn-add').simulate('click');
-    expect(app.state().gifts).toEqual([{ id: 1 }]);
+  describe('when `add gift` is clicked', () => {
+    it('should add a gift to `state`', () => {
+      app.find('.btn-add').simulate('click');
+      expect(app.state().gifts).toEqual([{ id: 1 }]);
+    });
   });
 });
