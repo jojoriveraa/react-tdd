@@ -4,12 +4,12 @@ import App from './App';
 
 const app = shallow(<App />);
 
-describe('The gift-giver app', () => {
+describe('The gift-giver', () => {
   it('renders correctly', () => {
     expect(app).toMatchSnapshot();
   });
 
-  it('intianizes with an empty list of gitfs', () => {
+  it('initializes with an empty list of gitfs', () => {
     expect(app.state().gifts).toEqual([]);
   });
 
