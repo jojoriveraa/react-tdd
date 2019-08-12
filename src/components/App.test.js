@@ -13,7 +13,7 @@ describe('The gift-giver', () => {
     expect(app.state().gifts).toEqual([]);
   });
 
-  describe('when `add gift` is clicked', () => {
+  describe('when `add gift` button is clicked', () => {
     beforeEach(() => {
       app.find('.btn-add').simulate('click');
     });
