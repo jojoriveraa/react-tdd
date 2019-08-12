@@ -2,9 +2,9 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';
 
-const app = shallow(<App />);
+describe('App [gift-giver]', () => {
+  const app = shallow(<App />);
 
-describe('The gift-giver', () => {
   it('renders correctly', () => {
     expect(app).toMatchSnapshot();
   });
@@ -13,9 +13,13 @@ describe('The gift-giver', () => {
     expect(app.state().gifts).toEqual([]);
   });
 
-  describe('when `add gift` is clicked', () => {
+  describe('when `add gift` button is clicked', () => {
     beforeEach(() => {
       app.find('.btn-add').simulate('click');
+    });
+
+    afterEach(() => {
+      app.setState({ gifts: [] });
     });
 
     it('should add a gift to `state`', () => {
@@ -23,7 +27,7 @@ describe('The gift-giver', () => {
     });
 
     it('should add a new gift to the rendered list', () => {
-      expect(app.find('.gift-list').children().length).toEqual(2);
+      expect(app.find('.gift-list').children().length).toEqual(1);
     });
   });
 });
