@@ -8,7 +8,7 @@ script:
   - yarn test -u --all --coverage --ci
   - yarn build
 after_success:
-  - ./node_modules/codecov/bin/codecov
+  - yarn codecov
 deploy:
   provider: pages
   skip_cleanup: true
