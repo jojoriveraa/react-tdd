@@ -1,4 +1,4 @@
-# giftgiver [![Build Status](https://travis-ci.com/jojoriveraa/giftgiver.svg?branch=master)](https://travis-ci.com/jojoriveraa/giftgiver)
+# giftgiver [![Build Status](https://travis-ci.com/jojoriveraa/giftgiver.svg?branch=master)](https://travis-ci.com/jojoriveraa/giftgiver) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jojoriveraa_giftgiver&metric=alert_status)](https://sonarcloud.io/dashboard?id=jojoriveraa_giftgiver)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
