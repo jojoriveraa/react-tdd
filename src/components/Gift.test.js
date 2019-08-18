@@ -26,4 +26,6 @@ describe('Gift', () => {
       expect(gift.state().person).toEqual(person);
     });
   });
+
+  describe('when typing into the present input', () => {});
 });
