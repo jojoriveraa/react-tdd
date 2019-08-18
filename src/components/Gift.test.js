@@ -27,5 +27,14 @@ describe('Gift', () => {
     });
   });
 
-  describe('when typing into the present input', () => {});
+  describe('when typing into the present input', () => {
+    const present = 'Golf clubs';
+    beforeEach(() => {
+      gift
+        .find('.input-present')
+        .simulate('change', { target: { value: present } });
+    });
+
+    it('updates the present in `state`', () => {});
+  });
 });
