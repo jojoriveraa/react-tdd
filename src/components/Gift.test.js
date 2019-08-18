@@ -19,5 +19,9 @@ describe('Gift', () => {
         .find('.input-person')
         .simulate('change', { target: { value: 'Uncle' } });
     });
+
+    it('updates the persin in `state`', () => {
+      expect(gift.state().person).toEqual('Uncle');
+    });
   });
 });
