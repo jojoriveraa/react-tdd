@@ -22,7 +22,7 @@ describe('Gift', () => {
         .simulate('change', { target: { value: person } });
     });
 
-    it('updates the persin in `state`', () => {
+    it('updates the person in `state`', () => {
       expect(gift.state().person).toEqual(person);
     });
   });
