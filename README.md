@@ -1,4 +1,4 @@
-# giftgiver [![Build Status](https://travis-ci.com/jojoriveraa/giftgiver.svg?branch=master)](https://travis-ci.com/jojoriveraa/giftgiver) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jojoriveraa_giftgiver&metric=alert_status)](https://sonarcloud.io/dashboard?id=jojoriveraa_giftgiver)
+# giftgiver [![Build Status](https://travis-ci.com/jojoriveraa/giftgiver.svg?branch=master)](https://travis-ci.com/jojoriveraa/giftgiver) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jojoriveraa_giftgiver&metric=alert_status)](https://sonarcloud.io/dashboard?id=jojoriveraa_giftgiver) [![codecov](https://codecov.io/gh/jojoriveraa/giftgiver/branch/master/graph/badge.svg)](https://codecov.io/gh/jojoriveraa/giftgiver)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
