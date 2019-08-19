@@ -24,6 +24,10 @@ class App extends Component {
     this.setState({ gifts });
   };
 
+  removeGift = () =>{
+    
+  }
+
   render() {
     return (
       <div>
