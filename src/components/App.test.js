@@ -41,6 +41,10 @@ describe('App [gift-giver]', () => {
       beforeEach(() => {
         app.instance().removeGift(id);
       });
+
+      it('', ()=>{
+        
+      })
     });
   });
 });
