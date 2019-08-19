@@ -1,0 +1,8 @@
+coverage:
+  range: 50..90
+  round: down
+  precision: 2
+  
+ignore:
+  - "src/setupTests.js"     # ignore configuration files
+  - "src/tempPolyfills.js"  # regexp accepted
