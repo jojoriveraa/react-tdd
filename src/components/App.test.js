@@ -1,7 +1,6 @@
-import React from 'react';
 import { shallow } from 'enzyme';
+import React from 'react';
 import App from './App';
-import Gift from './Gift';
 
 describe('App [gift-giver]', () => {
   const app = shallow(<App />);
