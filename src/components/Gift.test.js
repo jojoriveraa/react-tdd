@@ -1,5 +1,5 @@
-import React from 'react';
 import { shallow } from 'enzyme';
+import React from 'react';
 import Gift from './Gift';
 
 describe('Gift', () => {
@@ -38,5 +38,13 @@ describe('Gift', () => {
     it('updates the present in `state`', () => {
       expect(gift.state().present).toEqual(present);
     });
+  });
+
+  describe('when clicking the `Remove Gift` button', () => {
+    beforeEach(() => {
+      gift.find('.btn-remove').simulate('click');
+    });
+
+    it('should call the removeGift callback', () => {});
   });
 });
