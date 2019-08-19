@@ -3,7 +3,10 @@ import React from 'react';
 import Gift from './Gift';
 
 describe('Gift', () => {
-  const gift = shallow(<Gift />);
+  const mockRemove = jest.fn();
+  const id = 1;
+  const props = { gift: { id }, removeGift: mockRemove };
+  const gift = shallow(<Gift {...props} />);
 
   it('renders properly', () => {
     expect(gift).toMatchSnapshot();
