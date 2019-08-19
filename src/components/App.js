@@ -10,8 +10,8 @@ class App extends Component {
 
   addGift = () => {
     /**
-     * Get all the gifts and the max id in the array. 
-     * Then calculate the new id and add that gift to the array. 
+     * Get all the gifts and the max id in the array.
+     * Then calculate the new id and add that gift to the array.
      * Finally, save the array as the new gift list
      */
     const { gifts } = this.state;
@@ -23,7 +23,7 @@ class App extends Component {
 
   removeGift = id => {
     /**
-     * Get all the gifts but the one with selected id and 
+     * Get all the gifts but the one with selected id and
      * save the array as the new gift list
      */
     const gifts = this.state.gifts.filter(gift => gift.id !== id);
@@ -36,7 +36,7 @@ class App extends Component {
         <h2>Gift Giver</h2>
         <div className="gift-list">
           {this.state.gifts.map(g => {
-            return <Gift key={g.id} />;
+            return <Gift key={g.id} gift={g} removeGift={this.removeGift} />;
           })}
         </div>
         <Button className="btn-add" onClick={this.addGift}>
