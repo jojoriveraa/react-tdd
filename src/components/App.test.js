@@ -42,9 +42,7 @@ describe('App [gift-giver]', () => {
         app.instance().removeGift(id);
       });
 
-      it('', ()=>{
-        
-      })
+      it('removes the gift from `state`', () => {});
     });
   });
 });
