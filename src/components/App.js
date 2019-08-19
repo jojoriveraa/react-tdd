@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
-import Gift from './Gift';
 import { max_number } from '../helper';
+import Gift from './Gift';
 
 class App extends Component {
   constructor() {
@@ -16,9 +16,7 @@ class App extends Component {
      * Finally, save the array as the new gift list
      */
     const { gifts } = this.state;
-    const ids = gifts.map(g => g.id);
-    const maxId = max_number(ids);
-    gifts.push({ id: maxId + 1 });
+    gifts.push({ id: max_number(gifts.map(g => g.id)) + 1 });
     this.setState({ gifts });
   };
 
