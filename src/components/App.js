@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
-import Gift from './Gift'
+import Gift from './Gift';
 
 class App extends Component {
   constructor() {
@@ -10,17 +10,23 @@ class App extends Component {
 
   addGift = () => {
     /**
-     * For each new gift the id must be equal to the existing maximum plus one
+     * Get all the gifts and the max id in the array. 
+     * Then calculate the new id and add that gift to the array. 
+     * Finally, save the array as the new gift list
      */
-    // get a local copy of gifts array
     const { gifts } = this.state;
-    // get all ids in an array
     const ids = gifts.map(g => g.id);
-    // get the max id in the array, if there is no id set 0
     const maxId = ids.length > 0 ? Math.max(...ids) : 0;
-    // push a new item with the new id
     gifts.push({ id: maxId + 1 });
-    // replace state gifts with the local copy
+    this.setState({ gifts });
+  };
+
+  removeGift = id => {
+    /**
+     * Get all the gifts but the one with selected id and 
+     * save the array as the new gift list
+     */
+    const gifts = this.state.gifts.filter(gift => gift.id !== id);
     this.setState({ gifts });
   };
 
