@@ -42,7 +42,9 @@ describe('App [gift-giver]', () => {
         app.instance().removeGift(id);
       });
 
-      it('removes the gift from `state`', () => {});
+      it('removes the gift from `state`', () => {
+        expect(app.state().gifts).toEqual([]);
+      });
     });
   });
 });
