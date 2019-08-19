@@ -1,3 +1,15 @@
+dist: trusty
+sudo: required
+
+addons:
+  sonarcloud:
+    organization: "jojoriveraa"
+    token:
+      secure: "$sonarcloud"
+
+jdk:
+  - oraclejdk8
+
 language: node_js
 node_js:
   - 'stable'
@@ -7,6 +19,7 @@ cache:
 script:
   - yarn test -u --all --coverage --ci
   - yarn build
+  - sonar-scanner
 after_success:
   - yarn codecov
 deploy:
