@@ -4,3 +4,14 @@ body {
   padding-left: 20%;
   padding-right: 20%;
 }
+
+.gift {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 10 px;
+  padding: 20px;
+}
+
+button {
+  margin: 10px;
+}
