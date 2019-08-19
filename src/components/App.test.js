@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';
+import Gift from './Gift';
 
 describe('App [gift-giver]', () => {
   const app = shallow(<App />);
@@ -28,6 +29,10 @@ describe('App [gift-giver]', () => {
 
     it('should add a new gift to the rendered list', () => {
       expect(app.find('.gift-list').children().length).toEqual(1);
+    });
+
+    it('should create a Gift component', () => {
+      expect(app.find('Gift').exists()).toBe(true);
     });
   });
 });
