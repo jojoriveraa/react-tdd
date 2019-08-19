@@ -27,7 +27,7 @@ describe('App [gift-giver]', () => {
     });
 
     it('should add a new gift to the rendered list', () => {
-      expect(app.find('.gift-list').children().length).toEqual(1);
+      expect(app.find('.gift-list').children().length).toEqual(true);
     });
   });
 });
