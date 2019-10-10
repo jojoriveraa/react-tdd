@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://jojoriveraa.github.io/giftgiver/",
   "dependencies": {
-    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-adapter-react-16": "^1.15.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"
